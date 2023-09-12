@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fones de Ouvidos</title>
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header>
+        <a href="#" class="logo"><i class=''></i></a>
+
+        <ul class="navegação">
+            <i class=></i><h2>ZipZap</h2></a>
+            <li><a href="#">Precisa de ajuda?</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"> </a></li>
+        </ul><!--navegação-->
+
+     
+    </header>
+
+    <!--Parte principal do site(Imagens e etc)-->
+    <main>
+        <section class="home">
+            <div class="home-img">
+                <img src="Visual code (1).png" class="one">
+            </div><!--home-img-->
+
+            <div class="home-text">
+
+                <h1>Downloads<br> Tão rápidos quanto um raio</h1>
+                <h5>Só depende da sua internet</h5>
+                <h3>Grátis</h3>
+                <a href="#" class="btn">Download Agora</a>
+
+            </div><!--home-text-->
+        </section><!--home-->
+
+
+        <div class="main">
+            <div class="row">
+                <li><img src="nodered.png" onclick="slider('nodered.png')"></li>
+            </div><!--row-->
+
+            <div class="row2">
+                <li><img src="WordPress (2).png" onclick="slider('Wordpress (2).png')"></li>
+            </div><!--row2-->
+
+            <div class="row3">
+                <li><img src="Visual code (1).png" onclick="slider('Visual code (1).png')"></li>
+            </div><!--row3-->
+
+            <div class="row4">
+                <li><img src="icone-github-violet.png" onclick="slider('icone-github-violet.png')"></li>
+            </div><!--row4-->
+
+            <div class="row5">
+                <i><img src="Nodejs.png" onclick="slider('Nodejs.png')"></i>
+            </div><!--row5-->
+
+            <div class="row6">
+                <li><img src="Google_Chrome.png" onclick="slider('Google_Chrome.png')"></li>
+            </div><!--row6-->
+
+        </div><!--main-->
+
+
+
+
+
+
+
+        <script>
+            function slider(anything) {
+                document.querySelector('.one').src = anything;
+            };
+
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open');
+            }
+        </script>
+    </main>
+</body>
+
+</html>
